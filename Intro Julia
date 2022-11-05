@@ -3,3 +3,171 @@
 
 # Add the hours worked
 39 + 37.5 + 40 + 42
+
+# Hours worked this week
+39 + 37.5 + 40 + 42.
+# Print the number of days worked
+4
+
+# Print the sum of the hours worked
+println(4)
+
+# Create variable monday_distance
+monday_distance = 4500
+
+# Create variable monday_time
+monday_time = 28.9
+
+# Create variable wednesday_distance
+wednesday_distance = 6000
+
+# Create variable wednesday_time
+wednesday_time = 37.1
+# Print the average speed
+println(average_speed)
+
+# Print the type of runtime_1
+println(typeof(runtime_1))
+
+# Print the type of runtime_2
+println(typeof(runtime_2))
+
+# Calculate the average run time
+average_runtime = (runtime_1 + runtime_2)/2
+
+# Print the type of average_runtime
+println(typeof(average_runtime))
+
+a_float = 3.0
+
+# Convert a_float to be an integer and print its new type
+a_int = Int64(a_float)
+
+println(typeof(a_int))
+
+# Index drama grade
+drama = grades[end]
+
+# Print drama grade with interpolation
+println("Your drama grade is $drama")
+
+# Print mathematics grade with interpolation and parentheses
+println("Your mathematics grade is $(____)")
+
+
+# Print mathematics grade with interpolation and parentheses
+println("Your mathematics grade is $(grades[1])")
+
+# Slice out the customer-id
+customer_id = order_data[16:20]
+
+# Slice out the order-number
+order_number = order_data[38:46]
+# Slice out the customer-id
+customer_id = order_data[16:20]
+
+# Slice out the order-number
+order_number = order_data[38:46]
+# Calculate the difference
+time_diff = first_runtime - last_runtime
+
+println("Last run time was $time_diff minutes faster")
+# Create array of zeros
+x = zeros(Float64, 100)
+# Set the second value to 12
+x[2] = 12
+# Set the second value to 12
+x[2] = 12
+
+# Set the values from the 3rd to 6th index
+x[3:6] = [3,4,5,6]
+
+# Calculate the next number in the sequence
+next_number = fibonacci[end-1] + fibonacci[end]
+
+# Add this new number to the sequence
+push!(fibonacci, next_number)
+
+println(fibonacci)
+# Remove the duplicated value
+duplicated_value = pop!(runtimes)
+
+# Append new runtimes and new_runtimes
+append!(runtimes, new_runtimes)
+
+println("Duplicated value $duplicated_value")
+println("All run times: $runtimes")
+
+# Hours worked this week
+
+# Print the number of days worked
+println(4)
+
+# Print the sum of the hours worked
+println(39 + 37.5 + 40 + 42)
+
+# Divide x by y
+d = x ./ y
+
+# Subtract 32 from each element of body_temps_f
+body_temps_sub = body_temps_f .− 32
+
+# Multiply each element in body_temps_sub by 5/9
+body_temps_c = body_temps_sub .* (5/9)
+
+# Sort the temperatures from lowest to highest
+sorted_body_temps_c = sort(body_temps_c)
+
+# Print the 5 lowest temperatures
+println(sorted_body_temps_c[1:5])
+
+# Check if n is the correct type
+if typeof(n)==Int64
+	# Print n is the correct type
+	println("n is the correct type")
+# Use an else statement to print if n is not the correct type
+else
+	println("This script only works on integers")
+# Finish the conditional statement
+end
+
+println(n)
+
+# Complete the conditional statement to find the largeest value
+if x>y
+	larger = x
+else
+	larger = y
+end
+
+println("Maximum from x=$x and y=$y is $larger")
+
+ Complete the conditional statement to check if your script has finished
+if finished
+	println("Script has finished")
+else
+	println("Script still running")
+end
+
+# Print a warning message if the temperature is too low
+if body_temp < 35.9
+	println("Seems a little cold")
+# Print a warning message if the temperature is too high
+elseif body_temp > 37.6 
+    println("Might be a fever")
+# Print the message if the temperature is normal
+else
+	println("The patient's temperature seems normal")
+# Finish the conditional block
+end
+# Create the get_mathgrade function
+function get_mathgrade(grades)
+	return grades[1]
+end
+# Create the get_mathgrade function
+function get_mathgrade(grades)
+	return grades[1]
+end
+
+# Use the function on mygrades
+println(get_mathgrade(mygrades))
