@@ -271,3 +271,20 @@ println("Earliest year of publication is $earliest_year")
 println(describe(df_patients))
 # Find the mean heart rate
 mean_hr = mean(df_patients.heartrate)
+
+# Filter to where the sex is female
+df_female = filter(row -> row.sex == "female", df_patients)
+# Filter to where the sex is female
+df_female = filter(row -> row.sex == "female", df_patients)
+
+# Filter to where the sex is male
+df_male = filter(row -> row.sex == "male", df_patients)
+
+# Calculate mean body temperature for females
+female_temp = mean(df_female.bodytemp)
+
+# Calculate mean body temperature for males
+male_temp = mean(df_male.bodytemp)
+
+println("Body temperatures of females is: $female_temp F")
+println("Body temperatures of males is: $male_temp F")
