@@ -216,3 +216,58 @@ df_patients = DataFrame(file_contents)
 println(first(df_patients, 5))
 # Extract the mathematics grades
 math_grades = get_gradenumber.(grades_array, 1)
+
+# Create the DataFrame
+df_grades = DataFrame(
+	mathematics=get_gradenumber.(grades_array, 1),
+    history=get_gradenumber.(grades_array, 2), 
+    science=get_gradenumber.(grades_array, 3), 
+    drama=get_gradenumber.(grades_array, 4)
+    # Load the book review data
+df_books = DataFrame(CSV.File("books.csv"))
+
+# Print column names
+println(names(df_books))
+
+# Find number of rows and columns
+println(size(df_books))
+
+# Select the body temperature column
+body_temps = df_patients[:, "bodytemp"]
+
+println(body_temps)
+# Slice the first 6 columns
+df_narrow = df_books[:, 1:6]
+# Slice the first 6 columns
+df_narrow = df_books[:, 1:6]
+
+# Slice the 10th to 20th rows
+df_short = df_narrow[10:20, :]
+
+println(df_short)
+# Sort the data by body temperature
+df_bytemp = sort(df_patients, "bodytemp", rev=true)
+
+# Print the first 5 rows
+println(df_bytemp[1:5, :])
+# Find the total number of ratings
+total_reviews = sum(df_books.ratings_count)
+
+# Find the earliest publication year
+earliest_year = minimum(df_books.original_publication_year)
+
+println("Total number of reviews is $total_reviews")
+println("Earliest year of publication is $earliest_year")
+
+# Find the total number of ratings
+total_reviews = sum(df_books.ratings_count)
+
+# Find the earliest publication year
+earliest_year = minimum(df_books.original_publication_year)
+
+println("Total number of reviews is $total_reviews")
+println("Earliest year of publication is $earliest_year")
+# Summarize the DataFrame
+println(describe(df_patients))
+# Find the mean heart rate
+mean_hr = mean(df_patients.heartrate)
