@@ -171,3 +171,48 @@ end
 
 # Use the function on mygrades
 println(get_mathgrade(mygrades))
+# Import the Statistics package
+import Statistics as sts
+
+# Calculate the mean body temperature
+mean_body_temp_c = sts.mean(body_temps_c)
+
+# Print the mean body temperature
+println("The mean body temperature is ", mean_body_temp_c)
+
+# Calculate the mean heart rate
+mean_heart_rate = sts.mean(heart_rates)
+
+println("The mean heart rate is $mean_heart_rate")
+# Import the Statistics package
+import Statistics as sts
+
+# Calculate the mean body temperature
+mean_body_temp_c = sts.mean(body_temps_c)
+
+# Print the mean body temperature
+println("The mean body temperature is ", mean_body_temp_c)
+
+# Calculate the mean heart rate
+mean_heart_rate = sts.mean(heart_rates)
+
+println("The mean heart rate is $mean_heart_rate")
+using CSV
+using DataFrames
+
+file_contents = CSV.File("patients.csv")
+
+# Convert the data to a DataFrame
+df_patients = DataFrame(file_contents)
+using CSV
+using DataFrames
+
+
+file_contents = CSV.File("patients.csv")
+
+df_patients = DataFrame(file_contents)
+
+# Print the first 5 rows of the DataFrame
+println(first(df_patients, 5))
+# Extract the mathematics grades
+math_grades = get_gradenumber.(grades_array, 1)
